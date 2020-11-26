@@ -1,3 +1,6 @@
+#Melanie Andrade Cortés
+#Código: T00062025
+
 def solucion():
     estudiantes = {"Pepe Perez":[{"Curso":"Algoritmos",
                                  "Creditos":5,
@@ -66,8 +69,37 @@ def solucion():
                                  "Nota":3.2,
                                  "Semestre":"2004-2P"}]}
 
-# Ejercicio 1
+# Ejercicio 1: Promedio por cada semestre
+    promedios = {}
+    for key,value in estudiantes.items():
+        suma_creditos = 0
+        suma_notas = 0
 
+        total_creditos_semestre = 0
+        for diccionario_interior in value:
+            if diccionario_interior["Semestre"] == "2003-2P":
+                suma_creditos = suma_creditos + diccionario_interior["Creditos"]
+                promedios[key] = promedios[value] + diccionario_interior["Nota"]
+
+            elif diccionario_interior["Semestre"] == "2004-1P":
+                suma_creditos = suma_creditos + diccionario_interior["Creditos"]
+                promedios[key] = promedios[value] + diccionario_interior["Nota"]
+
+            elif diccionario_interior["Semestre"] == "2004-2P":
+                suma_creditos = suma_creditos + diccionario_interior["Creditos"]
+                suma_creditos = suma_creditos + diccionario_interior["Nota"]
+
+
+
+
+            for llave,valor in diccionario_interior.items():
+                if valor == "2003-2P":
+                    suma_notas =
+                elif valor == "2004-1P":
+
+                elif valor== "2003-2P":
+
+                sumatoria = value
 
 
 
