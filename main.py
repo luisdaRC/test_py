@@ -83,6 +83,7 @@ def practica():
     #Ejercicio 8. Imprimir el promedio de goles marcados por los jugadores que aparecen en la lista.
     promedio = total_goles/total_jugadores
     print("Promedio de goles anotados: ",promedio)
+    print("Aguante el Diego, el más grande")
 
 """
 Listas: Se puede hacer lo que quiera xD. Se define mi_lista = []
