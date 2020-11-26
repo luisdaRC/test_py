@@ -1,4 +1,22 @@
-def practica():
+def solucion():
+    cursos = {}
+    lista_cursos = []
+    estudiante = {"Pepe Perez":[{"Curso":"Algoritmos",
+                                 "Creditos":5,
+                                 "Nota":2.8,
+                                 "Semestre":"2004-1P"},
+                                {"Curso":"Astronomia",
+                                 "Creditos":10,
+                                 "Nota":3.2,
+                                 "Semestre":"2004-2P"}],
+                  "Ana Diaz":[{},{},{},{},{},{},{},{},{}],
+                  "Lina Gomez":[{},{},{},{},{}]}
+
+
+
+
+
+
     goleadores_2014 = {"Muller": ("Alemania", 5),
                        "Dempsey": ("USA", 2),
                        "James": ("Colombia", 6),
@@ -39,4 +57,4 @@ Diccionarios: Key : Value. Se define diccionario = {}
 
 
 if __name__ == '__main__':
-    practica()
+    solucion()
