@@ -1,5 +1,5 @@
 def practica():
-    goleadores_2014 = {"Muiller": ("Alemania", 5),
+    goleadores_2014 = {"Miuller": ("Alemania", 5),
                        "Dempsey": ("USA", 2),
                        "James": ("Colombia", 6),
                        "Muller": ("Alemania", 5),
@@ -17,7 +17,7 @@ def practica():
                        "Luiz": ("Brasil", 2)
                        }
 
-    #Ejercicio 1
+    #Ejercicio 1-Test
 
     mayor=0
     for key, value in goleadores_2014.items():
