@@ -92,8 +92,8 @@ def solucion():
                 notas[2] = notas[2] + diccionario_interior["Nota"]*diccionario_interior["Creditos"]
 
 
-
-        promedios[key] = notas[0]/creditos[0]
+        if creditos[0] != 0:
+            promedios[key] = notas[0]/creditos[0]
         promedios[key] = notas[1]/creditos[1]
         promedios[key] = notas[2]/creditos[2]
 
