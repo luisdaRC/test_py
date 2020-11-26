@@ -71,33 +71,39 @@ def solucion():
 
 # Ejercicio 1: Promedio por cada semestre
     promedios = {}
+    matriz = [[0 for i in range(3)] for j in range(3)]
     notas = [0,0,0]
     creditos = [0,0,0]
+    iterador = 0
     for key,value in estudiantes.items():
-        suma_creditos = 0
-        suma_notas = 0
 
-        total_creditos_semestre = 0
         for diccionario_interior in value:
             if diccionario_interior["Semestre"] == "2003-2P":
                 creditos[0] = creditos[0] + diccionario_interior["Creditos"]
                 notas[0] = notas[0] + diccionario_interior["Nota"]*diccionario_interior["Creditos"]
+                matriz[iterador][0]=notas[0]
 
             elif diccionario_interior["Semestre"] == "2004-1P":
                 creditos[1] = creditos[1] + diccionario_interior["Creditos"]
                 notas[1] = notas[1] + diccionario_interior["Nota"]*diccionario_interior["Creditos"]
+                matriz[iterador][1]=notas[1]
 
             elif diccionario_interior["Semestre"] == "2004-2P":
                 creditos[2] = creditos[2] + diccionario_interior["Creditos"]
                 notas[2] = notas[2] + diccionario_interior["Nota"]*diccionario_interior["Creditos"]
+                matriz[iterador][2]=notas[2]
 
+        for x in range(3):
+            if creditos[0] != 0:
+                print(key)
+                print(matriz[iterador][x]/creditos[x])
 
-        if creditos[0] != 0:
-            promedios[key] = notas[0]/creditos[0]
-        promedios[key] = notas[1]/creditos[1]
-        promedios[key] = notas[2]/creditos[2]
+        iterador = iterador + 1
 
-    print(promedios)
+#    print(promedios)
+
+# Ejercicio 2
+
 
 
 if __name__ == '__main__':
