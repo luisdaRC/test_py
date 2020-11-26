@@ -94,7 +94,7 @@ def solucion():
                 matriz[iterador][2]=notas[2]
 
         for x in range(3):
-            if creditos[0] != 0:
+            if creditos[x] != 0:
                 print(key)
                 print(matriz[iterador][x]/creditos[x])
 
