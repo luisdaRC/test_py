@@ -1,7 +1,5 @@
 def solucion():
-    cursos = {}
-    lista_cursos = []
-    estudiante = {"Pepe Perez":[{"Curso":"Algoritmos",
+    estudiantes = {"Pepe Perez":[{"Curso":"Algoritmos",
                                  "Creditos":5,
                                  "Nota":2.8,
                                  "Semestre":"2004-1P"},
@@ -68,6 +66,7 @@ def solucion():
                                  "Nota":3.2,
                                  "Semestre":"2004-2P"}]}
 
+# Ejercicio 1
 
 
 
