@@ -1,5 +1,5 @@
 def practica():
-    goleadores_2014 = {"Mualler": ("Alemania", 5),
+    goleadores_2014 = {"Muller": ("Alemania", 5),
                        "Dempsey": ("USA", 2),
                        "James": ("Colombia", 6),
                        "Muller": ("Alemania", 5),
