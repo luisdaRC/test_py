@@ -92,7 +92,7 @@ def solucion():
 
 
                 sumatoria = value
-
+    print(promedios)
 
 
 
