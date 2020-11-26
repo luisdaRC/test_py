@@ -71,7 +71,8 @@ def solucion():
 
 # Ejercicio 1: Promedio por cada semestre
     promedios = {}
-    lista = [0,0,0]
+    notas = [0,0,0]
+    creditos = [0,0,0]
     for key,value in estudiantes.items():
         suma_creditos = 0
         suma_notas = 0
@@ -79,25 +80,24 @@ def solucion():
         total_creditos_semestre = 0
         for diccionario_interior in value:
             if diccionario_interior["Semestre"] == "2003-2P":
-                suma_creditos = suma_creditos + diccionario_interior["Creditos"]
-                lista[0] = lista[0] + diccionario_interior["Nota"]
+                creditos[0] = creditos[0] + diccionario_interior["Creditos"]
+                notas[0] = notas[0] + diccionario_interior["Nota"]*diccionario_interior["Creditos"]
 
             elif diccionario_interior["Semestre"] == "2004-1P":
-                suma_creditos = suma_creditos + diccionario_interior["Creditos"]
-                lista[0] = lista[0] + diccionario_interior["Nota"]
+                creditos[1] = creditos[1] + diccionario_interior["Creditos"]
+                notas[1] = notas[1] + diccionario_interior["Nota"]*diccionario_interior["Creditos"]
 
             elif diccionario_interior["Semestre"] == "2004-2P":
-                suma_creditos = suma_creditos + diccionario_interior["Creditos"]
-                lista[0] = lista[0] + diccionario_interior["Nota"]
+                creditos[2] = creditos[2] + diccionario_interior["Creditos"]
+                notas[2] = notas[2] + diccionario_interior["Nota"]*diccionario_interior["Creditos"]
 
 
-                sumatoria = value
+
+        promedios[key] = notas[0]/creditos[0]
+        promedios[key] = notas[1]/creditos[1]
+        promedios[key] = notas[2]/creditos[2]
+
     print(promedios)
-
-
-
-
-
 
 
 if __name__ == '__main__':
